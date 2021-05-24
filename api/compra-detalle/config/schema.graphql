@@ -1,0 +1,25 @@
+module.exports = {
+    definition: `
+        input registerPurchaseInput{
+            cantidad:Int
+            producto:ID
+            total:Int
+        }
+    `,
+    query:`
+    `,
+    mutation:`
+        registerPurchase(input:registerPurchaseInput):CompraDetalle!
+    `,
+    resolver: {
+        Query:{
+           
+        },
+        Mutation:{
+            registerPurchase:{
+                description:'Registrar compra de un producto',
+                resolver:'application::compra-detalle.compra-detalle.registerPurchase'
+            },
+        }
+    }
+}

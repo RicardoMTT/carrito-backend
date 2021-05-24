@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compra_detalles",
+  "info": {
+    "name": "compra-detalle",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cantidad": {
+      "type": "integer"
+    },
+    "producto": {
+      "model": "productos"
+    },
+    "cliente": {
+      "model": "cliente"
+    },
+    "total": {
+      "type": "integer"
+    }
+  }
+}

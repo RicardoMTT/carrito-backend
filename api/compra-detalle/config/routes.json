@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/compra-detalles/registerPurchase",
+      "handler": "compra-detalle.registerPurchase",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/compra-detalles",
+      "handler": "compra-detalle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/compra-detalles/count",
+      "handler": "compra-detalle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/compra-detalles/:id",
+      "handler": "compra-detalle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/compra-detalles",
+      "handler": "compra-detalle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/compra-detalles/:id",
+      "handler": "compra-detalle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/compra-detalles/:id",
+      "handler": "compra-detalle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
